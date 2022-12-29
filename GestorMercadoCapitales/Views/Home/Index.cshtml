@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Menu principal";
 }
-@model CotizacionAccion
+@model List<CotizacionAccion>
 
 
 <table class="table">
@@ -23,20 +23,26 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td scope="row">@Html.DisplayFor(model => model.Ticker)</td>
-            <td>@Html.DisplayFor(model => model.Precio)</td>
-            <td>@Html.DisplayFor(model => model.VarPorcentual)%</td>
-            <td>@Html.DisplayFor(model => model.PrecioA)</td>
-            <td>@Html.DisplayFor(model => model.CCompra)</td>
-            <td>@Html.DisplayFor(model => model.PCompra)</td>
-            <td>@Html.DisplayFor(model => model.PVenta)</td>
-            <td>@Html.DisplayFor(model => model.CVenta)</td>
-            <td>@Html.DisplayFor(model => model.Min) <input type="range" min="@Html.DisplayFor(model => model.Min)" max="@Html.DisplayFor(model => model.Max)" disabled> @Html.DisplayFor(model => model.Max)</td>
-            <td>@Html.DisplayFor(model => model.VolNom)</td>
-            <td>$@Html.DisplayFor(model => model.Monto)K</td>
-            <td>@Html.DisplayFor(model => model.Oper)</td>
-            <td>@Html.DisplayFor(model => model.Hora)</td>
-        </tr>
+        @foreach (var datos in Model)
+        {
+            <tr>
+                <td scope="row">@datos.ticker</td>
+                <td>@datos.precio</td>
+                <td>@datos.varPorcentual %</td>
+                <td>@datos.precioA</td>
+                <td>@datos.cCompra</td>
+                <td>@datos.pCompra</td>
+                <td>@datos.pVenta</td>
+                <td>@datos.cVenta</td>
+                <td>@datos.min <input type="range" min="@datos.min" max="@datos.max" disabled> @datos.max</td>
+                <td>@datos.volNom</td>
+                <td>@datos.ajuste</td>
+                <td>@datos.oper</td>
+                <td>@datos.hora</td>
+            </tr>
+        }
+
+
+
     </tbody>
 </table>

@@ -8,21 +8,23 @@ namespace GestorMercadoCapitales.Models
 {
     public class CotizacionAccion
     {
-        [Key]
-        public Guid? PrecioId { get; set; }
-        public string Ticker { get; set; }
-        public float? Precio { get; set; }
-        public float? VarPorcentual { get; set; }
-        public float? PrecioA { get; set; }
-        public float? CCompra { get; set; }
-        public float? PCompra { get; set; }
-        public float? PVenta { get; set; }
-        public float? CVenta { get; set; }
-        public float? Min { get; set; }
-        public float? Max { get; set; }
-        public string VolNom { get; set; }
-        public float? Monto { get; set; }
-        public int? Oper { get; set; }
-        public string Hora { get; set; }
+        
+        //public Guid? PrecioId { get; set; }
+        public string ticker { get; set; }
+        public float? precio { get; set; }
+        public float? varPorcentual { get; set; }
+        public float? precioA { get; set; }
+        public float? cCompra { get; set; }
+        public float? pCompra { get; set; }
+        public float? pVenta { get; set; }
+        public float? cVenta { get; set; }
+        public float? min { get; set; }
+        public float? max { get; set; }
+        public string ajuste { get; set; }
+        public string volNom { get; set; }
+        public float? monto { get; set; }
+        public int? oper { get; set; }
+        public string hora { get; set; }
     }
+    
 }
