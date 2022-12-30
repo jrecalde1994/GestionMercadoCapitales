@@ -30,3 +30,7 @@ C:\proyectos\GestorMercadoCapitales\GestorMercadoCapitales\obj\Debug\netcoreapp2
 C:\proyectos\GestorMercadoCapitales\GestorMercadoCapitales\obj\Debug\netcoreapp2.1\GestorMercadoCapitales.dll
 C:\proyectos\GestorMercadoCapitales\GestorMercadoCapitales\obj\Debug\netcoreapp2.1\GestorMercadoCapitales.pdb
 C:\proyectos\GestorMercadoCapitales\GestorMercadoCapitales\obj\Debug\netcoreapp2.1\GestorMercadoCapitales.csproj.CopyComplete
+C:\proyectos\GestorMercadoCapitales\GestorMercadoCapitales\obj\Debug\netcoreapp2.1\Razor\Views\Login\Login.g.cshtml.cs
+C:\proyectos\GestorMercadoCapitales\GestorMercadoCapitales\obj\Debug\netcoreapp2.1\Razor\Views\Login\Index.g.cshtml.cs
+C:\proyectos\GestorMercadoCapitales\GestorMercadoCapitales\obj\Debug\netcoreapp2.1\Razor\Views\Login\Registrarme.g.cshtml.cs
+C:\proyectos\GestorMercadoCapitales\GestorMercadoCapitales\obj\Debug\netcoreapp2.1\Razor\Views\Login\Confirmacion.g.cshtml.cs

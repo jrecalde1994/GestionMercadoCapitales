@@ -51,21 +51,21 @@ namespace GestorMercadoCapitales.Controllers
 
         private List<CotizacionAccion> GetCotizaciones()
         {
-            string url = "http://localhost:22684/api/Precio";
-            var parames = new Dictionary<string, string>();
-            HttpClientHandler clientHandler = new HttpClientHandler();
-            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+            //string url = "http://localhost:22684/api/Precio";
+            //var parames = new Dictionary<string, string>();
+            //HttpClientHandler clientHandler = new HttpClientHandler();
+            //clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
             var data = new List<CotizacionAccion>();
 
-            using (HttpClient client = new HttpClient(clientHandler))
-            {
-                //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("none"));
+            //using (HttpClient client = new HttpClient(clientHandler))
+            //{
+            //    //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("none"));
 
-                //HttpResponseMessage response = client.PostAsync(url, new FormUrlEncodedContent(parames)).Result;
-                HttpResponseMessage response = client.GetAsync(url).Result;
-                var responseText = response.Content.ReadAsStringAsync().Result;
-                data = JsonConvert.DeserializeObject<List<CotizacionAccion>>(responseText); 
-            }
+            //    //HttpResponseMessage response = client.PostAsync(url, new FormUrlEncodedContent(parames)).Result;
+            //    HttpResponseMessage response = client.GetAsync(url).Result;
+            //    var responseText = response.Content.ReadAsStringAsync().Result;
+            //    data = JsonConvert.DeserializeObject<List<CotizacionAccion>>(responseText); 
+            //}
 
 
 

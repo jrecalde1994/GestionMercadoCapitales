@@ -31,6 +31,8 @@ namespace GestorMercadoCapitales
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddSession();
+            services.AddMvc();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -48,6 +50,8 @@ namespace GestorMercadoCapitales
                 app.UseHsts();
             }
 
+            app.UseSession();
+            app.UseMvcWithDefaultRoute();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

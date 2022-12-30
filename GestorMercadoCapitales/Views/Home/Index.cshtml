@@ -23,26 +23,28 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var datos in Model)
+
+        @try
         {
-            <tr>
-                <td scope="row">@datos.ticker</td>
-                <td>@datos.precio</td>
-                <td>@datos.varPorcentual %</td>
-                <td>@datos.precioA</td>
-                <td>@datos.cCompra</td>
-                <td>@datos.pCompra</td>
-                <td>@datos.pVenta</td>
-                <td>@datos.cVenta</td>
-                <td>@datos.min <input type="range" min="@datos.min" max="@datos.max" disabled> @datos.max</td>
-                <td>@datos.volNom</td>
-                <td>@datos.ajuste</td>
-                <td>@datos.oper</td>
-                <td>@datos.hora</td>
-            </tr>
+            @foreach (var datos in Model)
+            {
+                <tr>
+                    <td scope="row">@datos.ticker</td>
+                    <td>@datos.precio</td>
+                    <td>@datos.varPorcentual %</td>
+                    <td>@datos.precioA</td>
+                    <td>@datos.cCompra</td>
+                    <td>@datos.pCompra</td>
+                    <td>@datos.pVenta</td>
+                    <td>@datos.cVenta</td>
+                    <td>@datos.min <input type="range" min="@datos.min" max="@datos.max" disabled> @datos.max</td>
+                    <td>@datos.volNom</td>
+                    <td>@datos.ajuste</td>
+                    <td>@datos.oper</td>
+                    <td>@datos.hora</td>
+                </tr>
+            }
         }
-
-
-
+        catch { }
     </tbody>
 </table>
