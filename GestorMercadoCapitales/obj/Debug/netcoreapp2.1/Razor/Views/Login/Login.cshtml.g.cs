@@ -78,7 +78,7 @@ using GestorMercadoCapitales.Models;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(502, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "02c297a9ac864b36b8fc726654277320", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "fef530f2d66843f8993495249eaabcc3", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -170,7 +170,7 @@ using GestorMercadoCapitales.Models;
                             ¿Aún no tienes cuenta? ");
             EndContext();
             BeginContext(3438, 119, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88665416f24340c688dc630d0d5efa48", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fdc7af3750de4a0383f90e86073cdf87", async() => {
                 BeginContext(3542, 11, true);
                 WriteLiteral("Registrarme");
                 EndContext();
